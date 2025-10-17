@@ -20,20 +20,21 @@ temp_float_li = [float(num.replace(',','.'))for num in list(df['T'])]
 print(f'The tempreture of the coldest day : {min(temp_float_li)} ')
 print(f'The tempreture of the warmest day : {max(temp_float_li)} ')
 
-# plt.scatter(co_float_li[0:20],temp_float_li[0:20])
-# plt.title('')
-# plt.xlabel('CO')
-# plt.ylabel('Tempreture')
-# plt.show()
+plt.scatter(co_float_li[0:20],temp_float_li[0:20])
+plt.title('')
+plt.xlabel('CO')
+plt.ylabel('Tempreture')
+plt.show()
 
-# plt.bar(['CO','Temp'],[sum(co_float_li)//len(co_float_li),sum(temp_float_li)/len(temp_float_li)])
-# plt.show()
+plt.bar(['CO','Temp'],[sum(co_float_li)//len(co_float_li),sum(temp_float_li)/len(temp_float_li)])
+plt.show()
 
-# plt.plot(df['T'].iloc[:120])
-# plt.title('Tempreture Chart')
-# plt.show()
+plt.plot(df['T'].iloc[:120])
+plt.title('Tempreture Chart')
+plt.show()
 
 plt.scatter(list(df['Time'][6:16]),temp_float_li[6:16])
 plt.xlabel('Time')
 plt.ylabel('Tempreture')
+
 plt.show()
