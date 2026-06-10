@@ -1,97 +1,42 @@
-📝 README.md (Student Analysis - Corrected Dual Language)
-Student Success Factors Analysis Project
+🎓 Student Academic Success Analysis
 
-This project aims to analyze student data and identify factors influencing their final status (Placed or Not Placed). By examining criteria such as study hours, sleep hours, internet usage, previous scores, and assignment completion, we strive to gain a better understanding of academic success trends.
+Python
 
-The provided Python code performs comprehensive analyses and generates visualizations on the student_dataset_10000_rows.csv dataset. The key steps include:
+Pandas
 
-    Overall Placement Status Distribution:
+Matplotlib
 
-A bar chart visualizes the count of students who were Placed versus Not Placed, giving an immediate overview of the dataset’s composition.
+Status
+🇬🇧 English Description
 
-    Comparison of Averages (Study, Sleep, Internet Usage):
+This is an Exploratory Data Analysis (EDA) project focused on the student_dataset_10000_rows.csv dataset. Our objective is to uncover the behavioral and academic factors that influence a student’s final placement status. By leveraging Python’s powerful data ecosystem, we turn raw records into actionable insights.
+🚀 Key Features:
 
-Bar charts compare the average hours of study, sleep, and internet usage between students who were Placed and those who were Not Placed. This helps identify behavioral differences.
+    Visual Storytelling: Comparing placement status against study hours, sleep duration, and digital footprint (internet usage).
+    Academic Benchmarking: Deep-dive into assignment completion and prior academic performance.
+    Statistical Filtering: Identifying extreme values in sleep patterns and categorizing performance tiers (Perfect vs. Underachievers).
 
-    Average Assignments Completed:
+🛠 How to Run:
 
-A comparison of the average number of assignments completed by Placed versus Not Placed students to assess its impact on success.
+    Clone the repository:git clone [your-repo-url]
+    Install requirements:pip install pandas matplotlib
+    Execute:Run the analysis script or open the notebook in your favorite IDE (VS Code, Jupyter, etc.).
 
-    Average Previous Scores:
+🇮🇷 توضیحات فارسی
 
-The average previous scores of Placed and Not Placed students are compared to determine if past academic performance is a predictor of current success.
+این یک پروژه تحلیل اکتشافی داده‌ها (EDA) است که بر روی دیتاست student_dataset_10000_rows.csv متمرکز شده است. هدف ما کشف عوامل رفتاری و تحصیلی موثر بر وضعیت نهایی قبولی دانشجویان است. با بهره‌گیری از اکوسیستم قدرتمند پایتون، داده‌های خام را به بینش‌های ارزشمند و کاربردی تبدیل می‌کنیم.
+🚀 ویژگی‌های کلیدی:
 
-    Exam Score Statistics:
-    The maximum and minimum sleep hours across all students are reported.
-    The exact number of students who achieved a perfect score of 100 and those who scored 50 or less are calculated and displayed.
+    داستان‌سرایی با نمودار: مقایسه وضعیت قبولی با ساعات مطالعه، مدت زمان خواب و ردپای دیجیتال (استفاده از اینترنت).
+    سنجش عملکرد: تحلیل دقیق میزان تکمیل تکالیف و بررسی عملکرد تحصیلی پیشین دانشجویان.
+    فیلترهای آماری: شناسایی مقادیر افراطی در الگوهای خواب و دسته‌بندی نمرات (دانشجویان ممتاز در برابر دانشجویان ضعیف).
 
-Tools Used:
+🛠 نحوه اجرا:
 
-    Python: The primary programming language used for data analysis.
-    Pandas: For reading the CSV dataset (student_dataset_10000_rows.csv) and performing data manipulation (e.g., filtering, calculating means).
-    Matplotlib: For generating various plots (bar charts, etc.) to visualize the analysis results.
+    کلون کردن مخزن:git clone [your-repo-url]
+    نصب پیش‌نیازها:pip install pandas matplotlib
+    اجرا:اسکریپت تحلیل را اجرا کنید یا فایل نوت‌بوک را در محیط توسعه مورد علاقه خود (VS Code، Jupyter و غیره) باز کنید.
 
-How to Run the Code:
+Feel free to contribute or suggest improvements!
 
-    Ensure you have Python installed on your system.
-    Install the necessary libraries:
-
-                                                                    bash
-    pip install pandas matplotlib
-
-    Save the provided code as a Python file (e.g., student_analysis.py).
-    Make sure the student_dataset_10000_rows.csv file is in the same directory as the Python script, or provide the correct path to the file.
-    Run the script from your terminal:
-
-                                                                    bash
-    python student_analysis.py
-
-This will execute the analysis and display the plots and print the statistical results.
-پروژه تحلیل عوامل موفقیت تحصیلی دانش‌آموزان
-
-این پروژه با هدف تحلیل داده‌های مربوط به دانش‌آموزان و شناسایی عواملی که بر وضعیت نهایی دانشجو (پذیرفته شده یا رد شده) تاثیرگذار هستند، انجام شده است. با بررسی معیارهایی مانند ساعات مطالعه، خواب، استفاده از اینترنت، نمرات قبلی و وضعیت انجام تکالیف، سعی در درک بهتر روندهای موفقیت تحصیلی داریم.
-
-کدهای پایتون ارائه‌شده، تحلیل‌های جامعی را بر روی دیتاست student_dataset_10000_rows.csv انجام داده و مصورسازی‌هایی را تولید می‌کنند. مراحل کلیدی عبارتند از:
-
-    توزیع کلی وضعیت نهایی:
-
-یک نمودار میله‌ای، تعداد دانشجویان پذیرفته شده (Placed) در مقابل دانشجویان رد شده (Not Placed) را نمایش می‌دهد و نمای کلی از ترکیب دیتاست ارائه می‌دهد.
-
-    مقایسه میانگین‌ها (مطالعه، خواب، استفاده از اینترنت):
-
-نمودارهای میله‌ای، میانگین ساعات مطالعه، خواب و استفاده از اینترنت را بین دانشجویان پذیرفته شده و رد شده مقایسه می‌کنند. این امر به شناسایی تفاوت‌های رفتاری کمک می‌کند.
-
-    میانگین تکالیف تکمیل شده:
-
-مقا‌یسه‌ای بین میانگین تعداد تکالیف تکمیل شده توسط دانشجویان پذیرفته شده و رد شده برای ارزیابی تاثیر آن بر موفقیت.
-
-    میانگین نمرات قبلی:
-
-میانگین نمرات قبلی دانشجویان پذیرفته شده و رد شده مقایسه می‌شود تا مشخص شود آیا عملکرد تحصیلی گذشته، پیش‌بینی‌کننده موفقیت فعلی است یا خیر.
-
-    آمار نمرات امتحانی:
-    حداکثر و حداقل ساعات خواب در بین تمام دانشجویان گزارش می‌شود.
-    تعداد دقیق دانشجویانی که نمره کامل ۱۰۰ را کسب کرده‌اند و کسانی که نمره ۵۰ یا کمتر گرفته‌اند، محاسبه و نمایش داده می‌شود.
-
-ابزارهای مورد استفاده:
-
-    Python: زبان برنامه‌نویسی اصلی مورد استفاده برای تحلیل داده‌ها.
-    Pandas: برای خواندن دیتاست CSV (student_dataset_10000_rows.csv) و انجام عملیات دستکاری داده‌ها (مانند فیلتر کردن، محاسبه میانگین).
-    Matplotlib: برای تولید انواع نمودارها (مانند نمودارهای میله‌ای) جهت بصری‌سازی نتایج تحلیل.
-
-نحوه اجرای کد:
-
-    از نصب بودن پایتون بر روی سیستم خود اطمینان حاصل کنید.
-    کتابخانه‌های مورد نیاز را نصب کنید:
-
-                                                                    bash
-    pip install pandas matplotlib
-
-    کد ارائه‌شده را در یک فایل پایتون ذخیره کنید (مثلاً student_analysis.py).
-    مطمئن شوید که فایل student_dataset_10000_rows.csv در همان پوشه‌ای قرار دارد که اسکریپت پایتون در آن ذخیره شده است، یا مسیر صحیح فایل را مشخص کنید.
-    اسکریپت را از ترمینال خود اجرا کنید:
-
-                                                                    bash
-    python student_analysis.py
-
-این دستور تحلیل را اجرا کرده و نمودارها را نمایش می‌دهد و نتایج آماری را چاپ می‌کند.
+اگر پیشنهادی برای بهتر شدن پروژه داری، با کمال میل استقبال می‌کنم!
