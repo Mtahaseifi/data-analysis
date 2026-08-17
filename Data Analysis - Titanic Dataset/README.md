@@ -1,37 +1,57 @@
-# 🚢 Titanic Survival Data Analysis
+# Titanic Data Analysis
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-Library-orange.svg)
+An exploratory data analysis of the classic Titanic passenger dataset using Python, pandas, and matplotlib. The notebook looks at who survived, how survival broke down by sex, and pulls out a few other stats about the passengers.
 
----
+## Dataset
 
-## 🇬🇧 English Description
-This is an Exploratory Data Analysis (EDA) project on the famous Titanic dataset. The goal is to investigate factors affecting passenger survival rates using Python.
+`titanic.csv` — Titanic passenger records, including (at least) these columns:
 
-### Key Features:
-- **Data Cleaning**: Handling missing values (e.g., Age column).
-- **Statistical Analysis**: Calculating key metrics for survival groups.
-- **Visualization**: Using Matplotlib to create insightful bar charts and scatter plots.
+| Column | Description |
+|---|---|
+| `Sex` | Passenger's sex |
+| `Survived` | Survival status (0 = dead, 1 = survived) |
+| `Age` | Passenger's age |
+| `Fare` | Ticket fare paid |
 
-### How to Run:
-1. Clone this repository.
-2. Install dependencies: `pip install pandas matplotlib`
-3. Open `titanic_analysis.ipynb` in Jupyter Notebook or VS Code.
+## What the Notebook Does
 
----
+1. **Load and inspect the data** — reads `titanic.csv` with `pandas`.
+2. **Sex distribution** — bar chart of passenger counts by sex.
+3. **Overall survival** — pie chart of how many passengers survived vs. died.
+4. **Survival by sex** — separate pie charts breaking down survival for males and for females.
+5. **Age stats** — oldest passenger, youngest passenger, and average age; also looks up the record for the youngest passenger (age 0.42).
+6. **Age vs. fare** — scatter plot exploring the relationship between passenger age and ticket fare.
+7. **High fares** — pulls out all passengers who paid a fare of 500 or more.
 
-## 🇮🇷 توضیحات فارسی
-این پروژه یک تحلیل اکتشافی (EDA) بر روی دیتاست تایتانیک است. هدف اصلی این کار، بررسی آماری عوامل موثر بر شانس بقای مسافران بوده است.
+## Built With
 
-### مراحل انجام شده:
-- **پاکسازی داده‌ها**: مدیریت مقادیر گم‌شده و آماده‌سازی داده‌ها برای تحلیل.
-- **تحلیل آماری**: بررسی توزیع سن و قیمت بلیت نسبت به نرخ بقا.
-- **بصری‌سازی**: رسم نمودارهای میله‌ای و پراکندگی جهت درک بهتر الگوها.
+- **Python 3**
+- **[pandas](https://pandas.pydata.org/)** — data loading and manipulation
+- **[matplotlib](https://matplotlib.org/)** — bar, pie, and scatter plot visualizations
 
-### نحوه اجرا:
-پس از کلون کردن پروژه، کتابخانه‌های مورد نیاز را با دستور زیر نصب کرده و فایل نوت‌بوک را اجرا کنید:
-`pip install pandas matplotlib`
+## Getting Started
 
----
-*Feel free to contribute or suggest improvements!*
-*خوشحال می‌شم پیشنهادات یا نقدهای فنی‌تون رو برای بهتر شدن این تحلیل بدونم!*
+### Prerequisites
+```bash
+pip install pandas matplotlib jupyter
+```
+
+### Running the notebook
+```bash
+git clone https://github.com/Mtahaseifi/data-analysis.git
+cd data-analysis
+jupyter notebook titanic_analysis.ipynb
+```
+
+Make sure `titanic.csv` is in the same folder as the notebook.
+
+## Roadmap
+
+- [ ] Handle missing `Age` values explicitly instead of relying on `dropna()` only for the scatter plot
+- [ ] Add survival breakdown by passenger class (`Pclass`) if available in the dataset
+- [ ] Add a written summary/conclusion of findings at the end of the notebook
+
+## Author
+
+**Mohammad Taha Seifi**
+[GitHub](https://github.com/Mtahaseifi)
