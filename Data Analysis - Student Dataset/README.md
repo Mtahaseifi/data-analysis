@@ -1,40 +1,66 @@
-# Student Academic Success Analysis
+# Student Performance Analysis
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-Library-orange.svg)
+An exploratory data analysis of a student performance dataset (10,000 rows) using Python, pandas, and matplotlib. The notebook looks for patterns that separate students who got placed from those who didn't, and pulls out a few standalone stats about the dataset.
 
-🇬🇧 English Description
-# About the Project
+## Dataset
 
-This is an Exploratory Data Analysis (EDA) project on the student_dataset_10000_rows.csv dataset. The goal is to investigate factors affecting student placement rates using Python.
-# Key Features
+`student_dataset_10000_rows.csv` — 10,000 student records with the following columns:
 
-    # Data Insights: Analyzing key metrics like study hours and sleep patterns.
-    # Statistical Analysis: Calculating performance thresholds for academic success.
-    # Visualization: Using Matplotlib to create insightful bar charts and comparisons.
+| Column | Description |
+|---|---|
+| `study_hours` | Hours spent studying |
+| `attendance` | Attendance percentage |
+| `sleep_hours` | Hours of sleep |
+| `internet_usage` | Internet usage (hours) |
+| `assignments_completed` | Number of assignments completed |
+| `previous_score` | Score from a previous exam/term |
+| `exam_score` | Final exam score |
+| `placement_status` | Whether the student was `Placed` or `Not Placed` |
 
-# How to Run
+## What the Notebook Does
 
-    Clone this repository.
-    Install dependencies: pip install pandas matplotlib
-    Open the analysis file in Jupyter Notebook or VS Code.
+1. **Load and inspect the data** — reads the CSV with `pandas` and checks its structure with `.info()`.
+2. **Placement counts** — bar chart of how many students were `Placed` vs `Not Placed`.
+3. **Placed vs. not placed comparison** — splits the data into placed and non-placed groups and compares their average:
+   - Study hours
+   - Sleep hours
+   - Internet usage
+   - Assignments completed
+   - Previous score
+4. **Standalone stats**:
+   - Most and least hours slept by any student
+   - Number of students who scored a perfect 100 on the exam
+   - Number of students who scored 50 or below on the exam
 
-🇮🇷 توضیحات فارسی
-# درباره پروژه
+## Built With
 
-این پروژه یک تحلیل اکتشافی (EDA) بر روی دیتاست student_dataset_10000_rows.csv است. هدف اصلی این کار، بررسی آماری عوامل موثر بر شانس قبولی دانشجویان بوده است.
-# مراحل انجام شده
+- **Python 3**
+- **[pandas](https://pandas.pydata.org/)** — data loading and manipulation
+- **[matplotlib](https://matplotlib.org/)** — bar chart visualizations
 
-    # تحلیل داده‌ها: بررسی معیارهای کلیدی مانند ساعات مطالعه و الگوی خواب.
-    # تحلیل آماری: محاسبه بازه‌های عملکردی برای موفقیت تحصیلی.
-    # بصری‌سازی: رسم نمودارهای میله‌ای جهت درک بهتر الگوهای قبولی.
+## Getting Started
 
-# نحوه اجرا
+### Prerequisites
+```bash
+pip install pandas matplotlib jupyter
+```
 
-پس از کلون کردن پروژه، کتابخانه‌های مورد نیاز را با دستور زیر نصب کرده و فایل نوت‌بوک را اجرا کنید:
+### Running the notebook
+```bash
+git clone https://github.com/Mtahaseifi/data-analysis.git
+cd data-analysis
+jupyter notebook students_performance_analysis.ipynb
+```
 
-pip install pandas matplotlib
+Make sure `student_dataset_10000_rows.csv` is in the same folder as the notebook.
 
-Feel free to contribute or suggest improvements!
+## Roadmap
 
-خوشحال می‌شم پیشنهادات یا نقدهای فنی‌تون رو برای بهتر شدن این تحلیل بدونم!
+- [ ] Add a correlation analysis between numeric features and exam score
+- [ ] Add a written summary/conclusion of findings at the end of the notebook
+- [ ] Try a simple classification model to predict `placement_status`
+
+## Author
+
+**Mohammad Taha Seifi**
+[GitHub](https://github.com/Mtahaseifi)
